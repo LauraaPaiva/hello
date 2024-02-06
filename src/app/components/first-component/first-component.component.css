@@ -1,3 +1,9 @@
 h2 {
     color: rgb(210, 11, 184);
+    font: bolder;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    border-radius: 15px;
+    pad: -webkit-gradient();
 }
