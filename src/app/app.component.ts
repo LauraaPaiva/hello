@@ -14,4 +14,11 @@ import { HeaderComponent } from "./components/header/header.component";
 export class AppComponent {
   title = 'hello';
   name = 'Laura';
+  trajeto = {
+    primeiraCidade: 'Rio de Janeiro',
+    segundaCidade: 'São Paulo',
+    terceiraCidade: 'Curitiba',
+    quartaCidade: 'Florianópolis',
+    quintaCidade: 'Porto Alegre'
+  };
 }

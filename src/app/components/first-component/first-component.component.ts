@@ -10,4 +10,11 @@ import { Component, Input } from '@angular/core';
 export class FirstComponentComponent {
   familyName: string = 'Paiva';
   @Input() name: string = '';
+  @Input() trajeto!: {
+    primeiraCidade: string;
+    segundaCidade: string;
+    terceiraCidade: string;
+    quartaCidade: string;
+    quintaCidade: string;
+  };
 }
