@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './first-component.component.css'
 })
 export class FirstComponentComponent {
-  name: string = 'Laura';
-
+  familyName: string = 'Paiva';
+  @Input() name: string = '';
 }
