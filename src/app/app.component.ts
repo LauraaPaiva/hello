@@ -6,13 +6,14 @@ import { HeaderComponent } from "./components/header/header.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { IfRenderComponent } from "./components/if-render/if-render.component";
 import { EventsComponent } from "./components/events/events.component";
+import { EmitterComponent } from "./components/emitter/emitter.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent, IfRenderComponent, EventsComponent]
+    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent, IfRenderComponent, EventsComponent, EmitterComponent]
 })
 export class AppComponent {
   title = 'hello';
