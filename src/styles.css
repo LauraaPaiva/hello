@@ -13,5 +13,11 @@ a {
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     margin-bottom: 1em;
+    padding: 15px;
     text-align: center;
+}
+
+.bordas {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
