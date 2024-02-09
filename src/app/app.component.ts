@@ -5,13 +5,14 @@ import { SecondComponentComponent } from "./components/second-component/second-c
 import { HeaderComponent } from "./components/header/header.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
 import { IfRenderComponent } from "./components/if-render/if-render.component";
+import { EventsComponent } from "./components/events/events.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent, IfRenderComponent]
+    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent, IfRenderComponent, EventsComponent]
 })
 export class AppComponent {
   title = 'hello';
