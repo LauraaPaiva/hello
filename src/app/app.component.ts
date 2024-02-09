@@ -4,13 +4,14 @@ import { FirstComponentComponent } from "./components/first-component/first-comp
 import { SecondComponentComponent } from "./components/second-component/second-component.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { DirectivesComponent } from "./components/directives/directives.component";
+import { IfRenderComponent } from "./components/if-render/if-render.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent]
+    imports: [RouterOutlet, FirstComponentComponent, SecondComponentComponent, HeaderComponent, DirectivesComponent, IfRenderComponent]
 })
 export class AppComponent {
   title = 'hello';
