@@ -1,10 +1,10 @@
 <div class="section">
-    <div *ngIf="belive; else nameNotFound">GOD is with U</div>
-    <ng-template #nameNotFound>
-        <div>
-            <h2>Em busca da fé</h2>
-        </div>
-    </ng-template>
-    <div *ngIf="name === 'Laura'">Go ahead, Laura!</div>
-
+  <div *ngIf="belive; else nameNotFound">GOD is with U</div>
+  <ng-template #nameNotFound>
+    <div>
+      <h2>Em busca da fé</h2>
+    </div>
+  </ng-template>
+  <div *ngIf="name === 'Laura'">Go ahead, Laura!</div>
 </div>
+<p class="aula">if-render</p>
