@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Animal } from '../../Animal';
 
 @Component({
   selector: 'app-list-render',
@@ -9,20 +10,17 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list-render.component.css',
 })
 export class ListRenderComponent {
-  animals = [
-    { name: 'Lion', age: 10 },
-    { name: 'Tiger', age: 20 },
-    { name: 'Elephant', age: 30 },
-    { name: 'Zebra', age: 40 },
-    { name: 'Horse', age: 50 },
-    { name: 'Rabbit', age: 60 },
-    { name: 'Dragon', age: 70 },
-    { name: 'Snake', age: 80 },
-    { name: 'Goat', age: 90 },
-    { name: 'Monkey', age: 100 },
-    { name: 'Rooster', age: 110 },
-    { name: 'Dog', age: 120 },
-    { name: 'Pig', age: 130 },
-    { name: 'Turtle', age: 140 },
+  animals: Animal[] = [
+    { name: 'Simba', type: 'Lion', age: 10 },
+    { name: 'Tigrão', type: 'Tiger', age: 20 },
+    { name: 'Dumbo', type: 'Elephant', age: 30 },
+    { name: 'Martin', type: 'Zebra', age: 40 },
+    { name: 'Spirit', type: 'Horse', age: 50 },
   ];
+
+  animalDetails: string = '';
+
+  showType(animal: Animal) {
+    this.animalDetails = 'O ' + animal.name + ' é um ' + animal.type;
+  }
 }

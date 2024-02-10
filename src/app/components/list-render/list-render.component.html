@@ -1,9 +1,13 @@
 <div class="bordas">
   <h3>Animais:</h3>
   <ul>
-    <li *ngFor="let aninal of animals">
-      {{ aninal.name }} - {{ aninal.age }} anos<br />
+    <li *ngFor="let animal of animals">
+      <div class="animal">
+        {{ animal.name }} - {{ animal.age }} anos<br />
+        <button (click)="showType(animal)">Mostrar tipo do animal</button>
+      </div>
     </li>
   </ul>
+  <h3>{{ animalDetails }}</h3>
 </div>
 <p class="aula">list-render</p>
