@@ -6,8 +6,6 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-list-render',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
   templateUrl: './list-render.component.html',
   styleUrl: './list-render.component.css',
 })

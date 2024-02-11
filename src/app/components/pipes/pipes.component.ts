@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
-import { UpperCasePipe } from '@angular/common';
-import { TitleCasePipe } from '@angular/common';
-import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-pipes',
-  standalone: true,
-  imports: [UpperCasePipe, TitleCasePipe, DatePipe],
   templateUrl: './pipes.component.html',
   styleUrl: './pipes.component.css',
 })
