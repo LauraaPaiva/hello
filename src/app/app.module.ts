@@ -6,6 +6,9 @@ import { TitleCasePipe } from '@angular/common';
 import { DatePipe } from '@angular/common';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './components/header/header.component';
+
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { SecondComponentComponent } from './components/second-component/second-component.component';
 import { DirectivesComponent } from './components/directives/directives.component';
@@ -16,10 +19,12 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { LearningComponent } from './components/learning/learning.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     FirstComponentComponent,
     SecondComponentComponent,
     DirectivesComponent,
@@ -30,6 +35,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
+    LearningComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
