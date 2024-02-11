@@ -10,24 +10,24 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './list-render.component.css',
 })
 export class ListRenderComponent {
-  constructor(private listService: ListService) {}
+  constructor(private listService: ListService) {
+    this.getAnimals();
+  }
 
-  animals: Animal[] = [
-    { name: 'Simba', type: 'Lion', age: 10 },
-    { name: 'Tigrão', type: 'Tiger', age: 20 },
-    { name: 'Dumbo', type: 'Elephant', age: 30 },
-    { name: 'Martin', type: 'Zebra', age: 40 },
-    { name: 'Spirit', type: 'Horse', age: 50 },
-  ];
+  animals: Animal[] = [];
 
   animalDetails: string = '';
 
   showType(animal: Animal) {
-    this.animalDetails = 'O ' + animal.name + ' é ' + animal.type;
+    this.animalDetails = animal.name + ' é ' + animal.type;
   }
 
   removeAnimal(animal: Animal) {
     console.log('Remove animal');
     this.animals = this.listService.remove(this.animals, animal);
+  }
+
+  getAnimals(): void {
+    this.listService.getAll().subscribe((animals) => (this.animals = animals));
   }
 }

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { UpperCasePipe } from '@angular/common';
 import { TitleCasePipe } from '@angular/common';
 import { DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -46,6 +47,7 @@ import { LearningComponent } from './components/learning/learning.component';
     TitleCasePipe,
     DatePipe,
     AppRoutingModule,
+    HttpClientModule,
   ],
 })
 export class AppModule {}
