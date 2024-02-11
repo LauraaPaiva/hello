@@ -39,6 +39,13 @@ import { LearningComponent } from './components/learning/learning.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  imports: [BrowserModule, FormsModule, UpperCasePipe, TitleCasePipe, DatePipe],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    UpperCasePipe,
+    TitleCasePipe,
+    DatePipe,
+    AppRoutingModule,
+  ],
 })
 export class AppModule {}
