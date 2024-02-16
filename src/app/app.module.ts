@@ -5,10 +5,13 @@ import { UpperCasePipe } from '@angular/common';
 import { TitleCasePipe } from '@angular/common';
 import { DatePipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { SecondComponentComponent } from './components/second-component/second-component.component';
@@ -21,7 +24,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { LearningComponent } from './components/learning/learning.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     PipesComponent,
     TwoWayBindingComponent,
     LearningComponent,
+    ItemDetailComponent,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
@@ -49,6 +53,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     DatePipe,
     AppRoutingModule,
     HttpClientModule,
+    MatButtonModule,
+    MatCardModule,
   ],
 })
 export class AppModule {}

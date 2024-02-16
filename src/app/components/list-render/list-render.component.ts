@@ -18,6 +18,10 @@ export class ListRenderComponent {
 
   animalDetails: string = '';
 
+  detalhar(AnimalForDetail: Animal): void {
+    location.assign('/list/' + AnimalForDetail.id);
+  }
+
   showType(animal: Animal) {
     this.animalDetails = animal.name + ' é ' + animal.type;
   }

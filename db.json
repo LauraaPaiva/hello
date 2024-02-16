@@ -1,15 +1,15 @@
 {
   "animals": [
-    { "id": 1, "name": "Turca", "type": "Dog", "age": 4 },
-    { "id": 2, "name": "Tom", "type": "Cat", "age": 10 },
-    { "id": 3, "name": "Frida", "type": "Dog", "age": 11 },
-    { "id": 4, "name": "Bob", "type": "Horse", "age": 2 },
-    { "id": 5, "name": "Paco", "type": "Bird", "age": 1 },
-    { "id": 6, "name": "Simba", "type": "Lion", "age": 10 },
-    { "id": 7,  "name": "Tigrão", "type": "Tiger", "age": 20 },
-    { "id": 8,  "name": "Dumbo", "type": "Elephant", "age": 30 },
-    { "id": 9,  "name": "Martin", "type": "Zebra", "age": 40 },
-    { "id": 10,  "name": "Spirit", "type": "Horse", "age": 50 }
+    { "id": 1, "name": "Turca", "type": "Dog", "age": 4, "photo": "https://www.bunko.pet/__export/1644982972884/sites/debate/img/2022/02/15/kangal-turco-o-pastor-de-anatolia.jpg_172596871.jpg"},
+    { "id": 2, "name": "Tom", "type": "Cat", "age": 10, "photo": "https://th.bing.com/th/id/OIP.ie8mB8bnzmKC6F4h8e-X3wHaEo?rs=1&pid=ImgDetMain"},
+    { "id": 3, "name": "Frida", "type": "Dog", "age": 11, "photo": "https://i.etsystatic.com/10223319/r/il/a0162a/2007936231/il_794xN.2007936231_ncwl.jpg"},
+    { "id": 4, "name": "Bob", "type": "Horse", "age": 2, "photo": "https://th.bing.com/th/id/R.58fbfaaaef5862690c60ab784c9c3095?rik=4OiTCs689zlWeg&riu=http%3a%2f%2fblog.7mboots.com.br%2fwp-content%2fuploads%2f2020%2f06%2fthe-black-horse-of-the-frisian-breed-walks-in-the-P77UURU_Easy-Resize.com_.jpg&ehk=BirRtVKVl%2fxYEWnINTFbQvArSD4Dovulst1rObrJb7o%3d&risl=&pid=ImgRaw&r=0"},
+    { "id": 5, "name": "Paco", "type": "Bird", "age": 1, "photo": "https://i.pinimg.com/originals/41/9b/1d/419b1dada07d24d9cae2cc992ff94daf.jpg" },
+    { "id": 6, "name": "Simba", "type": "Lion", "age": 10, "photo": "https://1.bp.blogspot.com/-BwmfXXvpUJA/XjpLnk1pbnI/AAAAAAAAlw0/aG0kuJDIRNkk4KoyqUVtnKmbSiRbY4XXACLcBGAsYHQ/w1200-h630-p-k-no-nu/lion_5-wallpaper-2560x1440.jpg"},
+    { "id": 7,  "name": "Tigrão", "type": "Tiger", "age": 20, "photo": "https://th.bing.com/th/id/OIP.U_oWZOck3M36SiHJHMVkKQHaE8?rs=1&pid=ImgDetMain"},
+    { "id": 8,  "name": "Dumbo", "type": "Elephant", "age": 30, "photo": "https://cdn.pixabay.com/photo/2018/01/19/19/52/elephant-3093096_960_720.jpg" },
+    { "id": 9,  "name": "Martin", "type": "Zebra", "age": 40,"photo": "https://th.bing.com/th/id/R.c1765fc8a0f3aebdfadc6ac6acca9a1f?rik=%2bTQD8jhxfwOkpw&pid=ImgRaw&r=0"},
+    { "id": 10,  "name": "Spirit", "type": "Horse", "age": 50, "photo": "https://www.infoescola.com/wp-content/uploads/2008/05/cavalo-774691342.jpg"}
   ],
   "plantas":[
     { "id": 1, "name": "Cajueiro" },

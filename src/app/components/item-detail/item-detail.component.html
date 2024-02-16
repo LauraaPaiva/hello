@@ -1,0 +1,20 @@
+<div *ngIf="animal">
+  <mat-card>
+    <mat-card-content class="animal-detail">
+      <h1>{{ animal.name }}</h1>
+      <p>{{ animal.type }}</p>
+      <p>{{ animal.age }} anos</p>
+      <img
+        src="{{ animal.photo }}"
+        alt="{{ animal.type }} {{ animal.name }}"
+        height="400"
+        style="border-radius: 20px"
+      />
+    </mat-card-content>
+  </mat-card>
+  <div style="text-align: center">
+    <button mat-raised-button (click)="goToAnimalList()">
+      Voltar para lista de animais
+    </button>
+  </div>
+</div>

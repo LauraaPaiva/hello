@@ -1,0 +1,12 @@
+.animal-detail{
+    text-align: center;
+
+}
+
+mat-card{
+    margin: 40px;
+}
+
+mat-raised-button{
+    text-align: center;
+}

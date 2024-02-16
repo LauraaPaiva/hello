@@ -1,15 +1,22 @@
 <div class="bordas">
-  <h3>Animais:</h3>
+  <br />
+  <h1>Animais:</h1>
   <ul>
     <li *ngFor="let animal of animals">
-      <div class="animal">
-        {{ animal.name }} - {{ animal.age }} anos<br />
-        <button (click)="showType(animal)">Mostrar tipo do animal</button>
-        <button (click)="removeAnimal(animal)">Remover animal</button>
-      </div>
+      <mat-card>
+        <mat-card-content class="animal">
+          <h2>{{ animal.name }} - {{ animal.age }} anos</h2>
+          <button mat-raised-button (click)="detalhar(animal)">
+            Mostrar animal
+          </button>
+          <button mat-raised-button (click)="removeAnimal(animal)">
+            Remover animal
+          </button>
+          <br />
+        </mat-card-content>
+      </mat-card>
     </li>
   </ul>
-  <h3>{{ animalDetails }}</h3>
 </div>
 
-<p class="aula">list-render, interface, services</p>
+<p class="aula">list-render, interface, services, dynamic routes</p>
