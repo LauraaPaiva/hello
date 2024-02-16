@@ -21,6 +21,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { LearningComponent } from './components/learning/learning.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { LearningComponent } from './components/learning/learning.component';
     TwoWayBindingComponent,
     LearningComponent,
   ],
-  providers: [],
+  providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
   imports: [
     BrowserModule,
